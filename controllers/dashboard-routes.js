@@ -24,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/new', withAuth, (req, res) => {
+router.get('/new-post', withAuth, (req, res) => {
   // what view should we send the client when they want to create a new-post? (change this next line)
   res.render('new-post', {
     // again, rendering with a different layout than main! no change needed
