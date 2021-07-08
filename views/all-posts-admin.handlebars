@@ -1,7 +1,19 @@
-<div id="allPostsAdmin">
+
+<div id="x">
+  {{#each posts as |post|}}
+  {{> postItem post}}
+  {{/each}}
+</div>
+
+
+
+
+
+
+{{!-- <div id="allPostsAdmin">
     {{!-- allows me to access properties of each object --}}
   {{#each posts as |post|}}
   {{!-- partials template --}}
   {{> postItem post}}
   {{/each}}
-</div>
+</div> --}}
