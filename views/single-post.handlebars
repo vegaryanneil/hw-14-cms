@@ -13,16 +13,15 @@
   </p>
 </div>
 <input type="hidden" name="post-id" value="{{post.id}}"/>
-{{!-- {{#if loggedIn}} --}}
+{{#if loggedIn}}
 <div class="card">
   <div class="card-header"></div>
   <form class="card-body" id="new-comment-form">
-    
     <p class="form-label">Comment:</p>
     <textarea class="form-input" id="comment-body" name="comment-body"></textarea>
     <button type="submit" class="btn btn-primary">Submit:</button>
   </form>
 {{> comments post.comments}}
 </div>
-{{!-- {{/if}} --}}
+{{/if}}
 <script src="/js/comment.js"></script>

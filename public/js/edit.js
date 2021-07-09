@@ -6,8 +6,6 @@ const editFormHandler = async (event) => {
   const postTitle = document.querySelector('input[name="post-title"]').value;
   const postContent = document.querySelector('textarea[name="post-body"]').value;
 
-  console.log(postTitle);
-  console.log(postContent);
 
   const response = await fetch(`/api/post/${postId}`, {
     method: 'PUT',
@@ -19,8 +17,6 @@ const editFormHandler = async (event) => {
       'Content-Type': 'application/json'
     }
   });
-
-  console.log(response);
   if (response.ok) {
     document.location.replace('/dashboard');
   } else {
