@@ -1,6 +1,6 @@
 # Tech Blog
 
-![Landing Page](techblog.png)
+![Landing Page](Assets/techblog.PNG)
 ## Description
 I refactored a CMS. Starter code was provided by instructor and we had to get several features up and running. These features included the a login with authentication system, CRUD features on posts, and simple user friendly navigation.
 
